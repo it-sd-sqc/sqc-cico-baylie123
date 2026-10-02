@@ -19,3 +19,13 @@ Ticket 501
 6. Verify the application immediately returns to the state where the next customer can check in or out and the previous card number is cleared.
 7. Repeat the test using the valid customer card number 99999999, but do not click the "Next Customer" button.
 8. Verify the application automatically returns to the next-customer state after the existing timeout expires.
+
+Ticket 602
+
+1. Start the CiCo application.
+2. Verify main screen uses a monochrome/neutral color scheme.
+3. Enter the valid customer card number 00000000.
+4. Verify developer check in/out uses a monochrome/neutral color scheme.
+5. Enter the invalid customer card number 99999999.
+6. Verify the error screen uses a monochrome/neutral color scheme.
+5. Exit application.
