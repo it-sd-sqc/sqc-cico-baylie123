@@ -12,10 +12,10 @@
 Ticket 501
 
 1. Start the CiCo application.
-2. Enter a valid customer card number.
+2. Enter the valid customer card number 00000000.
 3. Verify the customer check-in/check-out result is displayed.
-4. Verify a button is available to allow the next customer to use the application.
-5. Click the button before the timeout finishes.
-6. Verify the application immediately returns to the state where the next customer can check in or out.
-7. Repeat the test without clicking the button.
-8. Verify the application still automatically returns to the next-customer state after the existing timeout.
+4. Verify the "Next Customer" button is available.
+5. Click the "Next Customer" button before the timeout finishes.
+6. Verify the application immediately returns to the state where the next customer can check in or out and the previous card number is cleared.
+7. Repeat the test using the valid customer card number 99999999, but do not click the "Next Customer" button.
+8. Verify the application automatically returns to the next-customer state after the existing timeout expires.
