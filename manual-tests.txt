@@ -29,3 +29,10 @@ Ticket 602
 5. Enter the invalid customer card number 99999999.
 6. Verify the error screen uses a monochrome/neutral color scheme.
 5. Exit application.
+
+Ticket 601 - Automatically submit card number
+
+1. Run the CiCo program.
+2. Enter an 8-digit card number without pressing Enter.
+3. Verify that the card number is automatically submitted after the 8th digit.
+4. Verify that the check-in process continues without needing to press Enter.
