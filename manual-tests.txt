@@ -9,16 +9,17 @@
 * The card field should remain empty.
 * The letters "abcd" should not appear in the card field.
 
-Ticket 501
+Ticket 501 - Next Customer
 
 1. Start the CiCo application.
-2. Enter the valid customer card number 00000000.
-3. Verify the customer check-in/check-out result is displayed.
-4. Verify the "Next Customer" button is available.
-5. Click the "Next Customer" button before the timeout finishes.
-6. Verify the application immediately returns to the state where the next customer can check in or out and the previous card number is cleared.
-7. Repeat the test using the valid customer card number 99999999, but do not click the "Next Customer" button.
-8. Verify the application automatically returns to the next-customer state after the existing timeout expires.
+2. Enter a valid customer card number: 00000000.
+3. Wait for the customer status screen to appear.
+4. Click the "Next Customer" button.
+5. Verify that the application returns to the main "Scan card" screen.
+6. Verify that the customer number field is empty.
+7. Verify that no error beep plays when returning to the main screen.
+8. Enter 00000000 again and verify the application still processes the card normally.
+9. Verify that the normal timeout still returns to the main screen and clears the customer number.
 
 Ticket 602
 
@@ -28,4 +29,11 @@ Ticket 602
 4. Verify developer check in/out uses a monochrome/neutral color scheme.
 5. Enter the invalid customer card number 99999999.
 6. Verify the error screen uses a monochrome/neutral color scheme.
-5. Exit application.
+7. Exit application.
+
+Ticket 601 - Automatically submit card number
+
+1. Run the CiCo program.
+2. Enter an 8-digit card number without pressing Enter.
+3. Verify that the card number is automatically submitted after the 8th digit.
+4. Verify that the check-in process continues without needing to press Enter.
