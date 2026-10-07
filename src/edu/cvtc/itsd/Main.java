@@ -58,7 +58,7 @@ public class Main {
     @Override
     public void replace(FilterBypass fb, int offset, int lengthToDelete, String stringToAdd, AttributeSet attr)
             throws BadLocationException {
-        if (stringToAdd == null || stringToAdd.matches("\\d+")) {
+        if (stringToAdd == null || stringToAdd.isEmpty() || stringToAdd.matches("\\d+")) {
             if (fb.getDocument().getLength() - lengthToDelete +
                     (stringToAdd == null ? 0 : stringToAdd.length()) <= MAX_LENGTH) {
                 super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
